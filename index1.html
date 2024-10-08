@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title"
+          content="Pin-up Yoga Merkezi - Esnekliği ve içsel dengeyi artırmanın bir yolu olarak yoga: boş zamanlarınızı değerlendirmek, hobi edinmek ve eğlenceli vakit geçirmek için ideal.">
+    <meta name="description"
+          content="Pin-up Yoga Merkezi: Esnekliğinizi ve içsel dengenizi güçlendirin. Boş zamanlarınızda hobi olarak yapabileceğiniz ve eğlenceyle dolu bir deneyim için mükemmel.">
+    <title>Pin-up Yoga Merkezi - Esnekliği ve içsel dengeyi artırmanın bir yolu olarak yoga: boş zamanlarınızı
+        değerlendirmek, hobi ve eğlence için harika bir seçenek.</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-48x48.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <style>
+
+      body {
+        font-family: Afacad Flux, sans-serif;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+
+      .header-teroodes {
+        background: #7B68EE;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+      }
+      .header-teroodes a {
+        text-decoration: none;
+        color: #fff;
+      }
+
+      .nav-teroodes {
+        height: 80px;
+        background: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .nav-list-teroodes {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        margin: 0;
+      }
+
+      .nav-list-teroodes li {
+        margin: 0 15px;
+      }
+
+      .nav-list-teroodes li a {
+        color: #333;
+        text-decoration: none;
+        padding: 10px;
+      }
+
+      .hero-image-teroodes {
+        position: relative;
+        max-width: 1220px;
+        margin: 0 auto;
+        height: 380px;
+      }
+
+      .hero-img-teroodes {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .hero-text-teroodes {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: center;
+        font-size: 20px;
+      }
+
+      .cta-button-teroodes {
+        margin-top: 10px;
+        padding: 10px 20px;
+        background-color: #7B68EE;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+        font-size: 14px;
+      }
+
+      .main-teroodes {
+        max-width: 1220px;
+        margin: 20px auto;
+        padding: 0 20px;
+      }
+
+      .section-teroodes {
+        margin-bottom: 20px;
+        padding: 20px;
+        background: #f9f9f9;
+        border-radius: 5px;
+      }
+
+      .image-teroodes {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+        border-radius: 5px;
+      }
+
+      .footer-teroodes {
+        background: #333;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+      }
+
+      @media (max-width: 768px) {
+        .nav-list-teroodes {
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+
+        .nav-list-teroodes li {
+          margin: 10px 0;
+        }
+
+        .main-teroodes {
+          padding: 0 10px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .header-teroodes, .footer-teroodes {
+          padding: 15px;
+        }
+
+        .nav-list-teroodes {
+          padding: 10px 0;
+        }
+
+        .nav-list-teroodes li {
+          margin: 5px 0;
+        }
+      }
+
+      .cookie-popup {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #7B68EE;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+        display: none; /* Скрыто по умолчанию */
+        z-index: 1000;
+      }
+
+      .cookie-popup p {
+        margin: 0;
+        margin-bottom: 10px;
+      }
+
+      .cookie-popup button {
+        background-color: white;
+        color: #7B68EE;
+        border: none;
+        padding: 10px 20px;
+        margin: 0 5px;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+
+      .cookie-popup button:hover {
+        background-color: rgba(255, 255, 255, 0.8);
+      }
+
+      .map-container {
+        width: 100%;
+        max-width: 1220px;
+        margin: 20px auto;
+      }
+
+      iframe {
+        width: 100%;
+        height: 450px;
+        border: 0;
+      }
+      #original {
+        font-family: 'Open Sans', sans-serif !important;
+        direction: ltr;
+        font-size: 1em;
+        margin: 0;
+        background-color: #07498f;
+        color: #fff;
+      }
+
+      .wrap__btn--PxHri--section {
+        background-image: url('img/bg-desc.png');
+        background-size: cover;
+        width: 914px;
+        margin: 0 auto;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .logo-img {
+        margin-bottom: 20px;
+        width: 200px;
+        height: auto;
+      }
+
+      .button {
+        align-items: center;
+        background: #FFFFFF;
+        border: 0 solid #E2E8F0;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        box-sizing: border-box;
+        color: #1A202C;
+        display: inline-flex;
+        font-weight: 700;
+        height: 56px;
+        justify-content: center;
+        line-height: 24px;
+        overflow-wrap: break-word;
+        padding: 24px;
+        text-decoration: none;
+        width: auto;
+        border-radius: 8px;
+        cursor: pointer;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+      }
+
+      .button {
+        padding: 29px 55px;
+        font-size: 18px;
+        text-decoration: none !important;
+      }
+
+      .main__img--l83Xf--section {
+        text-align: center;
+        background: rgba(255, 255, 255, 0.0);
+        padding: 19px;
+        border-radius: 0px;
+        padding: 46px;
+      }
+
+      .main__img--l83Xf--section h1 {
+        font-weight: 400;
+        font-size: 37px;
+        border-bottom: 1px dotted #ccc;
+        padding-bottom: 22px;
+        margin-top: 0px;
+      }
+
+      .button__header--0mbZF--element {
+        display: flex;
+        gap: 29px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 22px;
+      }
+
+      #main {
+        display: block;
+      }
+
+      #original {
+        display: none;
+      }
+
+      .button-yes {
+        background: #04cfa6;
+        box-shadow: 0 2px #082144;
+        transition: 0.5s;
+      }
+
+      .button-no {
+        background: #ff2401 !important;
+        padding: 29px 55px;
+        font-size: 18px;
+        text-decoration: none;
+        box-shadow: 0 3px #082144;
+      }
+
+      @media (max-width: 1200px) {
+        .wrap__btn--PxHri--section {
+          width: 100%;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .button__header--0mbZF--element {
+          flex-direction: column;
+        }
+      }
+
+      @media (max-width: 768px) {
+        #main {
+          display: none;
+        }
+
+        #original {
+          display: block;
+        }
+
+        .hero-image {
+          width: 100%;
+        }
+      }
+    </style>
+</head>
+<body>
+<div id="main">
+
+<header class="header-teroodes">
+    <a href="index.html"><h1>Pin-up Yoga Center - Hobi, Eğlence ve Aktif Boş Zamanlar</h1></a>
+</header>
+
+<nav class="nav-teroodes">
+    <ul class="nav-list-teroodes">
+        <li><a href="#about-teroodes">Hakkımızda</a></li>
+        <li><a href="#programs-teroodes">Programlar</a></li>
+        <li><a href="#events-teroodes">Etkinlikler</a></li>
+        <li><a href="#contact-teroodes">İletişim</a></li>
+        <li><a href="policy.html">Gizlilik Politikası</a></li>
+        <li><a href="terms.html">Şartlar ve koşullar</a></li>
+    </ul>
+</nav>
+
+<div class="hero-image-teroodes">
+    <img src="img/1_series_of_images_for_a_Yoga_Center_t_3.jpg" alt="Yoga Center" class="hero-img-teroodes">
+    <div class="hero-text-teroodes">
+        <h2>Pin-up Yoga ile Ruhsal ve Fiziksel Dengenizi Bulun</h2>
+        <p>Yoga ile Ruhsal ve Fiziksel Dengenizi Bulun</p>
+        <a href="#contact-teroodes" class="cta-button-teroodes">Daha Fazla Bilgi</a>
+    </div>
+</div>
+
+<main class="main-teroodes">
+    <section id="about-teroodes" class="section-teroodes">
+        <h2>Pin-up Yoga Center Hakkında</h2>
+        <img src="img/2_series_of_images_for_a_Yoga_Center_t_2.jpg" alt="Yoga Merkezi Hakkında"
+             class="image-teroodes">
+        <p>Pin-up Yoga Center, esnekliğinizi artırmak ve içsel dengenizi güçlendirmek için tasarlanmış bir ortam sunar.
+            Günümüzün hızlı tempolu yaşamında beden ve zihin dengesi kurmak önemli hale gelmiştir. Pin-up Yoga Center'da
+            bu dengeyi bulmak için size rehberlik ediyoruz. Boş zamanlarınızı değerlendirmenin harika bir yolu olan
+            yoga, aynı zamanda bir hobi ve eğlence kaynağıdır. Merkezimizin özeti ve faaliyetleri hakkında daha fazla
+            bilgi edinin, etkinliklerimize katılarak zamanı dolu dolu değerlendirin.</p>
+        <p>Yoga, bedeni ve zihni birleştirerek stres azaltımı, zindelik arttırımı ve zihinsel odaklanma sağlar. Boş
+            zamanlarınızı değerlendirmek, hobi edinmek ve eğlence ile dolu bir aktivite yapmak istiyorsanız, yogayı
+            yaşam biçiminiz haline getirerek kendinizi daha iyi hissetmenin yollarını keşfedin.</p>
+    </section>
+
+    <section id="programs-teroodes" class="section-teroodes">
+        <h2>Pin-up Yoga Programları: Boş Zamanlarınızı Değerlendirin, Hobi ve Eğlenceyi Keşfedin</h2>
+        <img src="img/3_series_of_images_for_a_Yoga_Center_t_1.jpg" alt="Yoga Programları" class="image-teroodes">
+        <p>Pin-up Yoga Center'da, her yaş ve yetenek seviyesine uygun yoga dersleri mevcuttur. Başlangıç seviyesinden
+            ileri düzey yoga pratiğine kadar, kişisel hedeflerinize ulaşmanız için çeşitli programlar sunuyoruz. Boş
+            zamanlarınızı değerlendirirken, hobi olarak yogayı keşfedebilir ve grup derslerinden özel seanslara kadar
+            yoga hobinizi aktif bir eğlence haline getirebilirsiniz.</p>
+        <p>Programlarımız arasında Hatha Yoga, Vinyasa, Restoratif Yoga ve daha fazlası bulunmaktadır. Her biri farklı
+            hedeflere uygun tasarlanmıştır, böylece boş zamanlarınızı en verimli şekilde değerlendirmek için kendinize
+            en uygun olanı seçebilirsiniz. Pin-up Yoga Center'da eğlenceli ve rahatlatıcı bir deneyim sizi bekliyor!</p>
+    </section>
+
+    <section id="events-teroodes" class="section-teroodes">
+        <h2>Pin-up Özel Etkinlik ve Atölyeler: Boş Zamanlarınızda Yoga ile Eğlence ve Hobi Fırsatları</h2>
+        <img src="img/4_eries_of_images_for_a_Yoga_Center_t_0.jpg" alt="Etkinlikler" class="image-teroodes">
+        <p>Pin-up merkezimizde düzenlenen özel etkinlikler ve atölyelerle yoga pratiğinizin sınırlarını genişletin. Yoga
+            Retreat'leri, meditasyon seansları ve uzman konuklar ile kişisel gelişiminizi destekleyin. Bu etkinlikler,
+            boş zamanlarınızı verimli ve eğlenceli hale getirirken, aynı zamanda yoga hobinizi de derinleştirmenize
+            yardımcı olur.</p>
+        <p>Her ay düzenli olarak gerçekleştirdiğimiz meditasyon atölyelerine katılarak, zihninizi nasıl
+            sakinleştireceğinizi ve pozitif enerjinizi nasıl artıracağınızı öğrenin. Pin-up Yoga Center'da hem eğlenip
+            hem de kendinize yatırım yaparak unutulmaz deneyimler yaşayın!.</p>
+    </section>
+
+    <section id="contact-teroodes" class="section-teroodes">
+        <h2>Pin-up Yoga Center İletişim Bilgileri: Boş Zamanlarınızı Hobi ve Eğlence ile Doldurun</h2>
+        <img src="img/8YogaCreate_a_series_of_images_for_a_Yoga_3.jpg" alt="İletişim" class="image-teroodes">
+        <p>Yoga Center'e ulaşmak ve daha fazla bilgi almak için bizimle iletişime geçin:</p>
+        <p>Adres: 1 ci, döngəsi 25 Qesr, Baku, Azerbaijan</p>
+        <p>Telefon: +994555418621</p>
+        <p>Email: info@pinupaz.yogacenter.com.ua</p>
+    </section>
+</main>
+
+
+<div class="map-container">
+    <h1>Bizim Yerimiz</h1>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105719.82259521843!2d49.751350730071564!3d40.394369705484586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d5911133b7d%3A0xa8747d998ffdd0ee!2sMary%20Yoga%20Studio!5e1!3m2!1sen!2sua!4v1728388105107!5m2!1sen!2sua"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+<footer class="footer-teroodes">
+    <p>&copy; 2024 Yoga Center. Tüm hakları saklıdır.</p>
+</footer>
+
+<div class="cookie-popup" id="cookiePopup">
+    <p>Web sitemizde en iyi deneyimi yaşamanız için çerezler kullanıyoruz. Çerezleri kabul ederek, kullanımıyla ilgili
+        bilgileri onaylamış oluyorsunuz.</p>
+    <button id="acceptCookies">Çerezleri Kabul Et</button>
+    <button id="declineCookies">Çerezleri Reddet</button>
+</div>
+
+<script>
+
+    function showCookiePopup() {
+        document.getElementById('cookiePopup').style.display = 'block';
+    }
+
+
+    if (!localStorage.getItem('cookiesAccepted')) {
+        showCookiePopup();
+    }
+    
+    document.getElementById('acceptCookies').onclick = function () {
+        localStorage.setItem('cookiesAccepted', 'true');
+        document.getElementById('cookiePopup').style.display = 'none';
+    };
+    
+    document.getElementById('declineCookies').onclick = function () {
+        document.getElementById('cookiePopup').style.display = 'none';
+
+    };
+</script>
+</div>
+<div id="original">
+    <div class="wrap__btn--PxHri--section">
+        <div class="main__img--l83Xf--section">
+            <img src="img/logo.svg" alt="Logo" class="logo-img">
+            <h1>– 18 yaşınız var?</h1>
+            <div class="button__header--0mbZF--element">
+                <a href="#" class="button button-yes">Bəli</a>
+                <a href="#" class="button button-no">Xeyr</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Pin-up Yoga Merkezi- Pin-Up",
+        "url": "",
+        "logo": "/favicon/favicon.ico"
+    }
+</script>
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WPHeader",
+        "headline": "Pin-up Yoga Merkezi- Pin-Up",
+        "description": "Pin-up Yoga Merkezi: Esnekliğinizi ve içsel dengenizi güçlendirin. Boş zamanlarınızda hobi olarak yapabileceğiniz ve eğlenceyle dolu bir deneyim için mükemmel.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Pin-up Yoga Merkezi- Pin-Up",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "/favicon/favicon.ico"
+            }
+        }
+    }
+</script>
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Pin-up Yoga Merkezi- Pin-Up",
+        "description": "Pin-up Yoga Merkezi: Esnekliğinizi ve içsel dengenizi güçlendirin. Boş zamanlarınızda hobi olarak yapabileceğiniz ve eğlenceyle dolu bir deneyim için mükemmel.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Pin-up Yoga Merkezi- Pin-Up"
+        },
+        "license": "A license document that applies to this content, typically indicated by URL"
+    }
+</script>
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SiteNavigationElement",
+        "name": "Main Navigation",
+        "url": "",
+        "hasPart": [
+            {
+                "@type": "WebPage",
+                "name": "Home",
+                "url": ""
+            },
+            {
+                "@type": "WebPage",
+                "name": "Policy",
+                "url": "/policy.html"
+            },
+            {
+                "@type": "WebPage",
+                "name": "Terms of Conditions",
+                "url": "/terms.html"
+            }
+        ]
+    }
+</script>
+</html>
