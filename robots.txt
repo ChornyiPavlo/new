@@ -3,5 +3,5 @@ User-Agent: *
 Disallow:
 
 
-Sitemap: http://pinupaz.yogacenter.com.ua/sitemap.xml
-Host: pinupaz.yogacenter.com.ua
+Sitemap: http://pinupaz.yogaclubhobby.com/sitemap.xml
+Host: pinupaz.yogaclubhobby.com
